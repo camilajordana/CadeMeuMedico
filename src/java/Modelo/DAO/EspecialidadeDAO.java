@@ -35,7 +35,7 @@ public class EspecialidadeDAO {
         }
     }
     
-    public void alterarLivro(Especialidade especialidade) throws SQLException {
+    public void alterar(Especialidade especialidade) throws SQLException {
         PreparedStatement stmt = connection.prepareStatement("update especialidades set nome = ? where IDEspecialidade = ?");
         stmt.setString(1, especialidade.getNome());
         stmt.setInt(2, especialidade.getIDEspecialidade());

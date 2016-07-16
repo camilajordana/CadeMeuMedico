@@ -107,7 +107,7 @@ public class AlterarCidade extends HttpServlet {
                 sessao.setAttribute("cidadeExiste", "existe");
                 getServletContext().getRequestDispatcher("/cidades.jsp").forward(request, response);
             } else {
-                dao.alterarLivro(cidade);
+                dao.alterar(cidade);
                 sessao.setAttribute("cidadeExiste", "não existe");
                 
                 

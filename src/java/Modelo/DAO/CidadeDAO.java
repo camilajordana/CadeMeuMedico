@@ -38,7 +38,7 @@ public class CidadeDAO {
     }
     
     
-    public void alterarLivro(Cidade cidade) throws SQLException {
+    public void alterar(Cidade cidade) throws SQLException {
         PreparedStatement stmt = connection.prepareStatement("update cidades set nome = ? where IDCidade = ?");
         stmt.setString(1, cidade.getNome());
         stmt.setInt(2, cidade.getIdCidade());

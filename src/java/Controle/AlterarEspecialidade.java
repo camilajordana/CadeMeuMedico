@@ -105,7 +105,7 @@ public class AlterarEspecialidade extends HttpServlet {
                 sessao.setAttribute("especialidadeExiste", "existe");
                 getServletContext().getRequestDispatcher("/especialidades.jsp").forward(request, response);
             } else {
-                dao.alterarLivro(especialidade);
+                dao.alterar(especialidade);
                 sessao.setAttribute("especialidadeExiste", "não existe");
                 getServletContext().getRequestDispatcher("/especialidades.jsp").forward(request, response);
             }
