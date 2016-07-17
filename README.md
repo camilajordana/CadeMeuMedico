@@ -3,7 +3,8 @@
 Trabalho da disciplina de Banco de Dados I (TADS-IFRN).
 
 Aluna: Camila Jordana Ribeiro Teixeira
-Professor: José Cunha
+
+Professor: José Antônio
 
 
 Cadê meu médico, implementa a ideia de descobrir quais são os médicos de determinada especialidade disponíveis em sua cidade. 
